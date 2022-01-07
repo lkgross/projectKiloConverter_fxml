@@ -29,16 +29,16 @@ import java.io.IOException;
  * instead of writing html code directly.)
  *
  * We need to put the .fxml file that contains the scene as a resource in
- * the appropriate part of the project structure.
+ * the appropriate part of the project structure. It needs to go in a directory
+ * called resources and in subdirectories that mirror the package (bsu.comp152)
+ * that we have in the java folder:
  *
- * To do so, first right click on resources in the project directory.
- * Add a new -> directory called bsu.
- * Right click on the new directory bsu (resources/bsu).
- * Add a new -> directory called comp152.
- * Right click on the new directory comp152 (resources/bsu/comp152).
- * Add a new -> FXML file.
- * Name it anything you like, such as Main.
- * Now you've created Main.fxml.
+ * In src/main -> right click -> new directory -> resources
+ * In src/main/resources-> right click -> new directory -> bsu
+ * In src/main/resources/bsu-> right click -> new directory -> comp152
+ * In src/main/resources/bsu-> right click -> new directory -> comp152
+ * In src/main/resources/bsu/comp152 -> right click -> new FXML File -> Main
+ * Now you've created Main.fxml (or use a different name than Main).
  * It is in the right place because the path
  * main/resources/bsu/comp152 for the FXML resource
  * mirrors the path main/java/bsu/comp152
